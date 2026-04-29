@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About | DJOMBRE SARLU</title>
+  <meta name="description" content="Learn more about DJOMBRE SARLU, a serious multiservice company based in Guinea, active in trade, transport, construction, mining, agro-business and real estate." />
+  <meta name="keywords" content="about DJOMBRE SARLU, company Guinea, multiservice company Guinea" />
+  <meta name="author" content="DJOMBRE SARLU" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="About | DJOMBRE SARLU" />
+  <meta property="og:description" content="Learn more about DJOMBRE SARLU, a serious multiservice company based in Guinea, active in trade, transport, construction, mining, agro-business and real estate." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/img/djombre-og.jpg" />
+
+  <!-- Future Google Analytics placeholder -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --dj-green: #0f6b3d;
+      --dj-green-dark: #084b2a;
+      --dj-gold: #c9a227;
+      --dj-blue: #123f73;
+      --dj-orange: #d97823;
+      --dj-dark: #17212b;
+      --dj-muted: #6b7683;
+      --dj-light: #f5f7f4;
+      --dj-white: #ffffff;
+      --dj-border: rgba(23, 33, 43, 0.09);
+      --shadow-soft: 0 22px 60px rgba(15, 35, 55, 0.11);
+      --shadow-card: 0 18px 45px rgba(15, 35, 55, 0.08);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --transition: all .35s ease;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--dj-dark);
+      background: var(--dj-white);
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .section-padding { padding: 96px 0; }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(15, 107, 61, 0.09);
+      color: var(--dj-green);
+      font-size: .82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      font-weight: 900;
+      letter-spacing: -0.055em;
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .section-text {
+      color: var(--dj-muted);
+      font-size: 1.04rem;
+      line-height: 1.8;
+    }
+
+    .topbar {
+      background: var(--dj-dark);
+      color: rgba(255,255,255,.82);
+      font-size: .88rem;
+      padding: 9px 0;
+    }
+
+    .topbar a:hover { color: var(--dj-gold); }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--dj-border);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled { box-shadow: 0 15px 45px rgba(15, 35, 55, 0.08); }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 900;
+      background:
+        linear-gradient(135deg, rgba(201,162,39,.95), rgba(15,107,61,.95)),
+        radial-gradient(circle at top right, rgba(255,255,255,.5), transparent 38%);
+      box-shadow: 0 12px 30px rgba(15, 107, 61, 0.22);
+    }
+
+    .brand-title {
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--dj-dark);
+    }
+
+    .brand-subtitle {
+      display: block;
+      color: var(--dj-muted);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    .nav-link {
+      font-weight: 700;
+      color: var(--dj-dark);
+      margin: 0 4px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active { color: var(--dj-green); }
+
+    .btn-premium {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--dj-green), var(--dj-green-dark));
+      color: white;
+      padding: 13px 22px;
+      font-weight: 800;
+      box-shadow: 0 18px 35px rgba(15, 107, 61, 0.22);
+      transition: var(--transition);
+    }
+
+    .btn-premium:hover {
+      transform: translateY(-3px);
+      color: white;
+      box-shadow: 0 22px 45px rgba(15, 107, 61, 0.3);
+    }
+
+    .btn-outline-premium {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(23,33,43,.16);
+      color: var(--dj-dark);
+      background: white;
+      padding: 13px 22px;
+      font-weight: 800;
+      transition: var(--transition);
+    }
+
+    .btn-outline-premium:hover {
+      border-color: var(--dj-green);
+      color: var(--dj-green);
+      transform: translateY(-3px);
+    }
+
+    .hero {
+      position: relative;
+      padding: 118px 0 95px;
+      background:
+        linear-gradient(135deg, rgba(8,75,42,.94), rgba(18,63,115,.78)),
+        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=80") center/cover;
+      color: white;
+      overflow: hidden;
+    }
+
+    .page-hero {
+      position: relative;
+      padding: 118px 0 92px;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero::after,
+    .page-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -45% -10%;
+      height: 420px;
+      background: rgba(255,255,255,.08);
+      transform: rotate(-4deg);
+    }
+
+    .breadcrumb-premium {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      color: rgba(255,255,255,.82);
+      font-size: .92rem;
+      margin-bottom: 24px;
+    }
+
+    .hero h1,
+    .page-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 5.2rem);
+      font-weight: 950;
+      letter-spacing: -0.075em;
+      line-height: .96;
+      max-width: 980px;
+      margin-bottom: 24px;
+    }
+
+    .hero p,
+    .page-hero p {
+      color: rgba(255,255,255,.84);
+      font-size: 1.15rem;
+      line-height: 1.8;
+      max-width: 760px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.16);
+      color: rgba(255,255,255,.9);
+      font-weight: 800;
+      font-size: .9rem;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(14px);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+    }
+
+    .hero-card strong {
+      display: block;
+      font-size: 2.25rem;
+      font-weight: 950;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .premium-card {
+      height: 100%;
+      border: 1px solid var(--dj-border);
+      border-radius: var(--radius-xl);
+      padding: 30px;
+      background: white;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+
+    .premium-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .premium-icon {
+      width: 62px;
+      height: 62px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--dj-green), var(--dj-blue));
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+    }
+
+    .premium-card h3 {
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+
+    .premium-card p {
+      color: var(--dj-muted);
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
+
+    .highlight-section {
+      background:
+        radial-gradient(circle at top left, rgba(201,162,39,.15), transparent 32%),
+        linear-gradient(135deg, #f6f8f5, #ffffff);
+    }
+
+    .image-panel {
+      position: relative;
+      min-height: 540px;
+      border-radius: 34px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      background: #dde5dd;
+    }
+
+    .image-panel img {
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      object-fit: cover;
+    }
+
+    .floating-note {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      padding: 24px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.12);
+    }
+
+    .floating-note strong {
+      display: block;
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--dj-dark);
+      margin-bottom: 8px;
+    }
+
+    .floating-note span {
+      color: var(--dj-muted);
+      line-height: 1.7;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      background: #101820;
+      min-height: 390px;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 390px;
+      object-fit: cover;
+      transition: transform .7s ease;
+      opacity: .82;
+    }
+
+    .project-card:hover img { transform: scale(1.08); }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10,16,22,.05), rgba(10,16,22,.88));
+      display: flex;
+      align-items: flex-end;
+      padding: 28px;
+    }
+
+    .project-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(201,162,39,.96);
+      color: #1d1a10;
+      font-size: .76rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: 12px;
+    }
+
+    .project-overlay h3 {
+      color: white;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      margin-bottom: 9px;
+    }
+
+    .project-overlay p {
+      color: rgba(255,255,255,.76);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .form-control,
+    .form-select,
+    textarea.form-control {
+      border: 1px solid rgba(23,33,43,.12);
+      border-radius: 16px;
+      padding: 14px 16px;
+      min-height: 52px;
+      box-shadow: none !important;
+    }
+
+    .form-control:focus,
+    .form-select:focus,
+    textarea.form-control:focus {
+      border-color: var(--dj-green);
+    }
+
+    .form-label {
+      font-weight: 800;
+      color: var(--dj-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-box {
+      border: 1px solid var(--dj-border);
+      border-radius: 32px;
+      padding: 34px;
+      background: white;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .cta-section {
+      background:
+        linear-gradient(135deg, rgba(15,107,61,.94), rgba(8,75,42,.96)),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80") center/cover;
+      color: white;
+      border-radius: 36px;
+      padding: 60px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      font-weight: 950;
+      letter-spacing: -0.06em;
+      line-height: 1.05;
+      margin-bottom: 18px;
+      max-width: 760px;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,.78);
+      line-height: 1.8;
+      max-width: 720px;
+    }
+
+    .footer {
+      background: #101820;
+      color: rgba(255,255,255,.72);
+      padding: 70px 0 25px;
+    }
+
+    .footer h5 {
+      color: white;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .footer a {
+      display: block;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,.68);
+      transition: var(--transition);
+    }
+
+    .footer a:hover {
+      color: var(--dj-gold);
+      transform: translateX(4px);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      background: #25D366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 1.8rem;
+      box-shadow: 0 18px 45px rgba(37, 211, 102, .35);
+      z-index: 999;
+      transition: var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      color: white;
+      transform: translateY(-5px) scale(1.04);
+    }
+
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    [data-animate].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 991px) {
+      .section-padding { padding: 72px 0; }
+      .hero,
+      .page-hero { padding: 95px 0 80px; }
+      .topbar { display: none; }
+      .cta-section { padding: 36px 24px; border-radius: 28px; }
+      .image-panel,
+      .image-panel img { min-height: 420px; }
+      .form-box { padding: 24px; border-radius: 26px; }
+    }
+
+  </style>
+</head>
+
+
+<body>
+  <div class="topbar">
+    <div class="container d-flex justify-content-between align-items-center gap-3">
+      <div class="d-flex flex-wrap gap-3">
+        <a href="tel:+224000000000"><i class="bi bi-telephone me-1"></i> +224 000 00 00 00</a>
+        <a href="mailto:contact@djombre.com"><i class="bi bi-envelope me-1"></i> contact@djombre.com</a>
+        <span><i class="bi bi-geo-alt me-1"></i> Conakry / Kagbelen, Guinea</span>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="https://facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+        <span class="brand-mark">D</span>
+        <span>
+          <span class="brand-title">DJOMBRE SARLU</span>
+          <span class="brand-subtitle">Multiservice company</span>
+        </span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Open menu">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">EN / FR</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn-premium" href="contact.html"><i class="bi bi-file-earmark-text"></i> Request a quote</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="page-hero" style='background: linear-gradient(135deg, rgba(8,75,42,.93), rgba(18,63,115,.82)), url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80") center/cover;'>
+    <div class="container position-relative z-1">
+      <div class="row align-items-end g-5">
+        <div class="col-lg-8" data-animate>
+          <div class="breadcrumb-premium">
+            <a href="index.html">Home</a>
+            <i class="bi bi-chevron-right small"></i>
+            <span>About</span>
+          </div>
+          <h1>A serious, organized and ambitious company.</h1>
+          <p>DJOMBRE SARLU supports individuals, companies and institutions with professional solutions across strategic sectors in Guinea.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="contact.html" class="btn-premium"><i class="bi bi-send"></i> Request a quote</a>
+            <a href="services.html" class="btn-outline-premium"><i class="bi bi-grid"></i> View services</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-animate>
+          <div class="hero-card">
+            <strong><i class="bi bi-building-check me-2"></i>About</strong>
+            <span>A reliable partner for serious clients, investors and institutions.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-animate>
+            <span class="section-kicker"><i class="bi bi-building-check"></i> Company profile</span>
+            <h2 class="section-title">A serious multiservice company serving strategic sectors.</h2>
+            <p class="section-text">
+              DJOMBRE SARLU supports clients, companies and institutions through professional services across
+              general trade, transport, construction, mining earthworks, agro-business, real estate, loading operations
+              and diverse business services.
+            </p>
+            <p class="section-text">
+              The company aims to project reliability, organization, field knowledge and the ability to support
+              significant business opportunities in Guinea.
+            </p>
+          </div>
+          <div class="col-lg-6" data-animate>
+            <div class="image-panel">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80" alt="Professional business meeting">
+              <div class="floating-note">
+                <strong>Built on trust.</strong>
+                <span>A corporate identity designed for clients, investors and institutional partners.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding highlight-section">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 780px;" data-animate>
+          <span class="section-kicker"><i class="bi bi-gem"></i> Values</span>
+          <h2 class="section-title">The qualities clients expect from a reliable partner.</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-animate><article class="premium-card"><div class="premium-icon"><i class="bi bi-shield-check"></i></div><h3>Reliability</h3><p>Clear communication, serious execution and responsible business conduct.</p></article></div>
+          <div class="col-md-6 col-lg-3" data-animate><article class="premium-card"><div class="premium-icon"><i class="bi bi-clock"></i></div><h3>Responsiveness</h3><p>Fast understanding of client needs and practical solutions for the field.</p></article></div>
+          <div class="col-md-6 col-lg-3" data-animate><article class="premium-card"><div class="premium-icon"><i class="bi bi-diagram-3"></i></div><h3>Organization</h3><p>Structured processes that help manage projects and business operations.</p></article></div>
+          <div class="col-md-6 col-lg-3" data-animate><article class="premium-card"><div class="premium-icon"><i class="bi bi-geo-alt"></i></div><h3>Local expertise</h3><p>A strong understanding of the Guinean business and field environment.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="cta-section" data-animate>
+          <span class="section-kicker bg-white text-success"><i class="bi bi-handshake"></i> Partnership</span>
+          <h2>Looking for a serious business partner in Guinea?</h2>
+          <p>DJOMBRE SARLU is positioned to support companies, institutions and investors with professional multisector services.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="contact.html" class="btn-premium bg-white text-success"><i class="bi bi-envelope"></i> Contact us</a>
+            <a href="services.html" class="btn-outline-premium"><i class="bi bi-grid"></i> Explore services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="brand-mark">D</span>
+            <div>
+              <div class="brand-title text-white">DJOMBRE SARLU</div>
+              <span class="brand-subtitle">Multiservice company</span>
+            </div>
+          </div>
+          <p>
+            General trade, transport, construction, mining earthworks, agro-business, real estate,
+            loading operations and professional services in Guinea.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Navigation</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Business areas</h5>
+          <a href="services.html">Construction</a>
+          <a href="services.html">Transport</a>
+          <a href="services.html">Agro-business</a>
+          <a href="services.html">Real estate</a>
+          <a href="services.html">General services</a>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact</h5>
+          <a href="tel:+224000000000"><i class="bi bi-telephone me-2"></i>+224 000 00 00 00</a>
+          <a href="mailto:contact@djombre.com"><i class="bi bi-envelope me-2"></i>contact@djombre.com</a>
+          <a href="contact.html"><i class="bi bi-geo-alt me-2"></i>Conakry / Kagbelen, Guinea</a>
+        </div>
+      </div>
+
+      <hr class="border-secondary-subtle my-4">
+
+      <div class="d-flex flex-wrap justify-content-between gap-3 small">
+        <span>© 2026 DJOMBRE SARLU. All rights reserved.</span>
+        <span>Static front-end mockup - Bootstrap 5</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/224000000000" aria-label="Contact DJOMBRE SARLU on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const animatedElements = document.querySelectorAll('[data-animate]');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    animatedElements.forEach((element) => observer.observe(element));
+  </script>
+</body>
+</html>
