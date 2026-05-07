@@ -3,936 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Projets & Réalisations | DJOMBRE SARLU - Guinée</title>
-  <meta name="description" content="Découvrez les projets et réalisations de DJOMBRE SARLU en Guinée : BTP, transport, terrassement minier, immobilier, agro-business et prestations multiservices." />
-  <meta name="keywords" content="projets DJOMBRE SARLU, réalisations BTP Guinée, transport Guinée, terrassement minier Guinée, immobilier Guinée, agro business Guinée, entreprise Guinée" />
-  <meta name="author" content="DJOMBRE SARLU" />
-  <meta name="robots" content="index, follow" />
-
-  <meta property="og:title" content="Projets & Réalisations | DJOMBRE SARLU" />
-  <meta property="og:description" content="Une entreprise multiservices engagée dans le BTP, le transport, les mines, l’immobilier, l’agro-business et les services professionnels en Guinée." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/djombre-og.jpg" />
-
-  <!-- Google Analytics futur emplacement -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
-
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Site indisponible | DJOMBRE SARLU</title>
   <style>
     :root {
-      --dj-green: #0f6b3d;
-      --dj-green-dark: #084b2a;
-      --dj-gold: #c9a227;
-      --dj-blue: #123f73;
-      --dj-orange: #d97823;
-      --dj-dark: #17212b;
-      --dj-muted: #6b7683;
-      --dj-light: #f5f7f4;
-      --dj-white: #ffffff;
-      --dj-border: rgba(23, 33, 43, 0.09);
-      --shadow-soft: 0 22px 60px rgba(15, 35, 55, 0.11);
-      --shadow-card: 0 18px 45px rgba(15, 35, 55, 0.08);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --transition: all .35s ease;
+      --green: #0f6b46;
+      --green-dark: #08452f;
+      --gold: #caa24d;
+      --text: #18211d;
+      --muted: #66736d;
+      --border: #e4e9e4;
+      --bg: #f5f7f4;
+      --white: #ffffff;
     }
 
     * { box-sizing: border-box; }
 
-    html { scroll-behavior: smooth; }
+    html, body { min-height: 100%; }
 
     body {
       margin: 0;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--dj-dark);
-      background: var(--dj-white);
-      overflow-x: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        linear-gradient(135deg, rgba(15, 107, 70, 0.10), rgba(202, 162, 77, 0.12)),
+        var(--bg);
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .section-padding {
-      padding: 100px 0;
-    }
-
-    .section-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(15, 107, 61, 0.09);
-      color: var(--dj-green);
-      font-size: .82rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      margin-bottom: 18px;
-    }
-
-    .section-title {
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 900;
-      letter-spacing: -0.05em;
-      line-height: 1.05;
-      margin-bottom: 18px;
-    }
-
-    .section-text {
-      color: var(--dj-muted);
-      font-size: 1.04rem;
-      line-height: 1.8;
-    }
-
-    .topbar {
-      background: var(--dj-dark);
-      color: rgba(255,255,255,.82);
-      font-size: .88rem;
-      padding: 9px 0;
-    }
-
-    .topbar a:hover { color: var(--dj-gold); }
-
-    .navbar {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--dj-border);
-      transition: var(--transition);
-    }
-
-    .navbar.scrolled {
-      box-shadow: 0 15px 45px rgba(15, 35, 55, 0.08);
-    }
-
-    .brand-mark {
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
+    main {
+      min-height: 100vh;
       display: grid;
       place-items: center;
-      color: white;
-      font-weight: 900;
-      background:
-        linear-gradient(135deg, rgba(201,162,39,.95), rgba(15,107,61,.95)),
-        radial-gradient(circle at top right, rgba(255,255,255,.5), transparent 38%);
-      box-shadow: 0 12px 30px rgba(15, 107, 61, 0.22);
+      padding: 28px;
     }
 
-    .brand-title {
-      font-weight: 900;
-      letter-spacing: -0.04em;
+    .notice {
+      width: min(720px, 100%);
+      padding: clamp(28px, 6vw, 56px);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 24px 70px rgba(24, 33, 29, 0.10);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 0 14px;
+      margin-bottom: 22px;
+      color: var(--green-dark);
+      background: rgba(15, 107, 70, 0.08);
+      border: 1px solid rgba(15, 107, 70, 0.14);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 7vw, 4rem);
       line-height: 1;
-      color: var(--dj-dark);
     }
 
-    .brand-subtitle {
-      display: block;
-      color: var(--dj-muted);
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      margin-top: 3px;
-    }
-
-    .nav-link {
-      font-weight: 700;
-      color: var(--dj-dark);
-      margin: 0 4px;
-    }
-
-    .nav-link:hover,
-    .nav-link.active {
-      color: var(--dj-green);
-    }
-
-    .btn-premium {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      border: 0;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--dj-green), var(--dj-green-dark));
-      color: white;
-      padding: 13px 22px;
-      font-weight: 800;
-      box-shadow: 0 18px 35px rgba(15, 107, 61, 0.22);
-      transition: var(--transition);
-    }
-
-    .btn-premium:hover {
-      transform: translateY(-3px);
-      color: white;
-      box-shadow: 0 22px 45px rgba(15, 107, 61, 0.3);
-    }
-
-    .btn-outline-premium {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      border-radius: 999px;
-      border: 1px solid rgba(23,33,43,.16);
-      color: var(--dj-dark);
-      background: white;
-      padding: 13px 22px;
-      font-weight: 800;
-      transition: var(--transition);
-    }
-
-    .btn-outline-premium:hover {
-      border-color: var(--dj-green);
-      color: var(--dj-green);
-      transform: translateY(-3px);
-    }
-
-    .page-hero {
-      position: relative;
-      padding: 120px 0 95px;
-      background:
-        linear-gradient(135deg, rgba(8,75,42,.94), rgba(18,63,115,.88)),
-        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=80") center/cover;
-      color: white;
-      overflow: hidden;
-    }
-
-    .page-hero::after {
-      content: "";
-      position: absolute;
-      inset: auto -10% -45% -10%;
-      height: 420px;
-      background: rgba(255,255,255,.08);
-      transform: rotate(-4deg);
-    }
-
-    .breadcrumb-premium {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 15px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.18);
-      color: rgba(255,255,255,.82);
-      font-size: .92rem;
-      margin-bottom: 24px;
-    }
-
-    .page-hero h1 {
-      font-size: clamp(2.5rem, 6vw, 5.2rem);
-      font-weight: 950;
-      letter-spacing: -0.07em;
-      line-height: .96;
-      max-width: 890px;
-      margin-bottom: 24px;
-    }
-
-    .page-hero p {
-      color: rgba(255,255,255,.82);
-      font-size: 1.15rem;
-      line-height: 1.8;
-      max-width: 720px;
-    }
-
-    .hero-stat-card {
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.18);
-      backdrop-filter: blur(14px);
-      border-radius: var(--radius-xl);
-      padding: 28px;
-    }
-
-    .hero-stat-card strong {
-      display: block;
-      font-size: 2.4rem;
-      font-weight: 950;
-      letter-spacing: -0.05em;
-    }
-
-    .filter-card {
-      border: 1px solid var(--dj-border);
-      border-radius: var(--radius-xl);
-      padding: 18px;
-      background: white;
-      box-shadow: var(--shadow-card);
-      margin-top: -42px;
-      position: relative;
-      z-index: 5;
-    }
-
-    .filter-pill {
-      border: 1px solid rgba(23,33,43,.12);
-      background: #fff;
-      color: var(--dj-dark);
-      padding: 10px 16px;
-      border-radius: 999px;
-      font-weight: 800;
-      transition: var(--transition);
-    }
-
-    .filter-pill:hover,
-    .filter-pill.active {
-      background: var(--dj-green);
-      color: white;
-      border-color: var(--dj-green);
-    }
-
-    .project-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: var(--radius-xl);
-      background: #101820;
-      min-height: 420px;
-      box-shadow: var(--shadow-card);
-      transition: var(--transition);
-    }
-
-    .project-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 100%;
-      min-height: 420px;
-      object-fit: cover;
-      transition: transform .7s ease;
-      opacity: .82;
-    }
-
-    .project-card:hover img {
-      transform: scale(1.08);
-    }
-
-    .project-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(10,16,22,.05), rgba(10,16,22,.88));
-      display: flex;
-      align-items: flex-end;
-      padding: 28px;
-    }
-
-    .project-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(201,162,39,.96);
-      color: #1d1a10;
-      font-size: .76rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: .07em;
-      margin-bottom: 12px;
-    }
-
-    .project-overlay h3 {
-      color: white;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      margin-bottom: 9px;
-    }
-
-    .project-overlay p {
-      color: rgba(255,255,255,.76);
+    p {
+      margin: 0 auto;
+      max-width: 580px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.4vw, 1.18rem);
       line-height: 1.7;
-      margin: 0;
     }
 
-    .process-card {
-      height: 100%;
-      border: 1px solid var(--dj-border);
-      border-radius: var(--radius-xl);
-      padding: 28px;
-      background: white;
-      box-shadow: var(--shadow-card);
-      transition: var(--transition);
-    }
-
-    .process-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .process-number {
-      width: 54px;
-      height: 54px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      font-weight: 950;
-      color: white;
-      background: linear-gradient(135deg, var(--dj-green), var(--dj-blue));
-      margin-bottom: 18px;
-    }
-
-    .process-card h3 {
-      font-size: 1.18rem;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-    }
-
-    .process-card p {
-      color: var(--dj-muted);
-      line-height: 1.75;
-      margin: 0;
-    }
-
-    .highlight-section {
-      background:
-        radial-gradient(circle at top left, rgba(201,162,39,.15), transparent 32%),
-        linear-gradient(135deg, #f6f8f5, #ffffff);
-    }
-
-    .capability-box {
-      border-radius: var(--radius-xl);
-      padding: 36px;
-      background: var(--dj-dark);
-      color: white;
-      overflow: hidden;
-      position: relative;
-      min-height: 100%;
-    }
-
-    .capability-box::before {
-      content: "";
-      position: absolute;
-      width: 220px;
-      height: 220px;
-      border-radius: 999px;
-      background: rgba(201,162,39,.16);
-      top: -80px;
-      right: -70px;
-    }
-
-    .capability-box h3 {
-      font-size: 1.9rem;
-      font-weight: 900;
-      letter-spacing: -0.05em;
-      margin-bottom: 14px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .capability-box p {
-      color: rgba(255,255,255,.74);
-      line-height: 1.8;
-      position: relative;
-      z-index: 1;
-    }
-
-    .capability-list {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .capability-list span {
-      display: flex;
+    .contact {
+      display: inline-flex;
       align-items: center;
-      gap: 10px;
-      color: rgba(255,255,255,.88);
-      font-weight: 700;
-    }
-
-    .cta-section {
-      background:
-        linear-gradient(135deg, rgba(15,107,61,.94), rgba(8,75,42,.96)),
-        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80") center/cover;
-      color: white;
-      border-radius: 36px;
-      padding: 60px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .cta-section h2 {
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      font-weight: 950;
-      letter-spacing: -0.06em;
-      line-height: 1.05;
-      margin-bottom: 18px;
-      max-width: 760px;
-    }
-
-    .cta-section p {
-      color: rgba(255,255,255,.78);
-      line-height: 1.8;
-      max-width: 720px;
-    }
-
-    .footer {
-      background: #101820;
-      color: rgba(255,255,255,.72);
-      padding: 70px 0 25px;
-    }
-
-    .footer h5 {
-      color: white;
-      font-weight: 900;
-      margin-bottom: 18px;
-    }
-
-    .footer a {
-      display: block;
-      margin-bottom: 10px;
-      color: rgba(255,255,255,.68);
-      transition: var(--transition);
-    }
-
-    .footer a:hover {
-      color: var(--dj-gold);
-      transform: translateX(4px);
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      right: 22px;
-      bottom: 22px;
-      width: 58px;
-      height: 58px;
+      justify-content: center;
+      min-height: 52px;
+      margin-top: 30px;
+      padding: 0 22px;
+      color: var(--white);
+      background: var(--green);
       border-radius: 999px;
-      background: #25D366;
-      color: white;
-      display: grid;
-      place-items: center;
-      font-size: 1.8rem;
-      box-shadow: 0 18px 45px rgba(37, 211, 102, .35);
-      z-index: 999;
-      transition: var(--transition);
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 16px 34px rgba(15, 107, 70, 0.22);
     }
 
-    .whatsapp-float:hover {
-      color: white;
-      transform: translateY(-5px) scale(1.04);
-    }
+    .contact:hover { background: var(--green-dark); }
 
-    [data-animate] {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity .7s ease, transform .7s ease;
-    }
-
-    [data-animate].visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 991px) {
-      .section-padding {
-        padding: 72px 0;
-      }
-
-      .page-hero {
-        padding: 95px 0 80px;
-      }
-
-      .topbar {
-        display: none;
-      }
-
-      .cta-section {
-        padding: 36px 24px;
-        border-radius: 28px;
-      }
-    }
-
-    @media (max-width: 575px) {
-      .project-card,
-      .project-card img {
-        min-height: 360px;
-      }
-
-      .filter-card {
-        margin-top: -24px;
-      }
+    .line {
+      width: 84px;
+      height: 4px;
+      margin: 26px auto 0;
+      background: var(--gold);
+      border-radius: 999px;
     }
   </style>
 </head>
-
 <body>
-  <div class="topbar">
-    <div class="container d-flex justify-content-between align-items-center gap-3">
-      <div class="d-flex flex-wrap gap-3">
-        <a href="tel:+224000000000"><i class="bi bi-telephone me-1"></i> +224 000 00 00 00</a>
-        <a href="mailto:contact@djombre.com"><i class="bi bi-envelope me-1"></i> contact@djombre.com</a>
-        <span><i class="bi bi-geo-alt me-1"></i> Conakry / Kagbelen, Guinée</span>
-      </div>
-      <div class="d-flex gap-3">
-        <a href="https://facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
-        <span class="brand-mark">D</span>
-        <span>
-          <span class="brand-title">DJOMBRE SARLU</span>
-          <span class="brand-subtitle">Entreprise multiservices</span>
-        </span>
-      </a>
-
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Ouvrir le menu">
-        <i class="bi bi-list fs-1"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 py-3 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="secteurs.html">Secteurs</a></li>
-          <li class="nav-item"><a class="nav-link active" href="projets.html">Projets</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="en/projects.html">FR / EN</a></li>
-          <li class="nav-item ms-lg-2">
-            <a class="btn-premium" href="devis.html"><i class="bi bi-file-earmark-text"></i> Demander un devis</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="page-hero">
-    <div class="container position-relative z-1">
-      <div class="row align-items-end g-5">
-        <div class="col-lg-8" data-animate>
-          <div class="breadcrumb-premium">
-            <a href="index.html">Accueil</a>
-            <i class="bi bi-chevron-right small"></i>
-            <span>Projets & réalisations</span>
-          </div>
-          <h1>Des réalisations pensées pour inspirer confiance.</h1>
-          <p>
-            DJOMBRE SARLU accompagne les clients, entreprises, institutions et partenaires dans des opérations liées au BTP,
-            au transport, aux mines, à l’immobilier, à l’agro-business et aux prestations de services.
-          </p>
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="devis.html" class="btn-premium"><i class="bi bi-send"></i> Présenter un projet</a>
-            <a href="services.html" class="btn-outline-premium"><i class="bi bi-grid"></i> Voir nos services</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4" data-animate>
-          <div class="hero-stat-card">
-            <strong>5+</strong>
-            <span>Secteurs stratégiques couverts avec une approche terrain, professionnelle et orientée résultats.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
   <main>
-    <section class="container">
-      <div class="filter-card" data-animate>
-        <div class="d-flex flex-wrap align-items-center gap-2">
-          <a class="filter-pill active" href="projets.html">Tous les projets</a>
-          <a class="filter-pill" href="services.html">BTP</a>
-          <a class="filter-pill" href="transport.html">Transport</a>
-          <a class="filter-pill" href="secteurs.html">Mines</a>
-          <a class="filter-pill" href="immobilier.html">Immobilier</a>
-          <a class="filter-pill" href="agro-business.html">Agro-business</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding">
-      <div class="container">
-        <div class="row justify-content-between align-items-end mb-5">
-          <div class="col-lg-7" data-animate>
-            <span class="section-kicker"><i class="bi bi-kanban"></i> Réalisations</span>
-            <h2 class="section-title">Une vitrine claire des domaines où DJOMBRE SARLU intervient.</h2>
-          </div>
-          <div class="col-lg-4" data-animate>
-            <p class="section-text mb-0">
-              Les visuels ci-dessous servent de placeholders premium pour la maquette. Ils pourront être remplacés plus tard
-              par les vraies photos de chantiers, opérations, véhicules, terrains ou bâtiments.
-            </p>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-lg-6" data-animate>
-            <article class="project-card">
-              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80" alt="Projet BTP et construction en Guinée">
-              <div class="project-overlay">
-                <div>
-                  <span class="project-badge"><i class="bi bi-building"></i> BTP</span>
-                  <h3>Construction & travaux de bâtiment</h3>
-                  <p>
-                    Réalisation, coordination et suivi de travaux pour des projets publics, privés ou institutionnels.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-6" data-animate>
-            <article class="project-card">
-              <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80" alt="Transport et logistique">
-              <div class="project-overlay">
-                <div>
-                  <span class="project-badge"><i class="bi bi-truck"></i> Transport</span>
-                  <h3>Transport & appui logistique</h3>
-                  <p>
-                    Organisation du transport, gestion des flux et appui opérationnel pour marchandises, matériaux et équipements.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4" data-animate>
-            <article class="project-card">
-              <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?auto=format&fit=crop&w=900&q=80" alt="Terrassement minier">
-              <div class="project-overlay">
-                <div>
-                  <span class="project-badge"><i class="bi bi-cone-striped"></i> Mines</span>
-                  <h3>Terrassement minier</h3>
-                  <p>
-                    Préparation, nivellement et interventions terrain pour les zones minières et industrielles.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4" data-animate>
-            <article class="project-card">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Bâtiment moderne immobilier">
-              <div class="project-overlay">
-                <div>
-                  <span class="project-badge"><i class="bi bi-houses"></i> Immobilier</span>
-                  <h3>Promotion & gestion immobilière</h3>
-                  <p>
-                    Valorisation de biens, gestion d’actifs, accompagnement immobilier et suivi administratif.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4" data-animate>
-            <article class="project-card">
-              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Terrain agricole agro-business">
-              <div class="project-overlay">
-                <div>
-                  <span class="project-badge"><i class="bi bi-flower1"></i> Agro-business</span>
-                  <h3>Agro-business & exploitation</h3>
-                  <p>
-                    Appui à la mise en valeur de projets agricoles et à l’organisation de chaînes d’approvisionnement locales.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-6" data-animate>
-            <article class="project-card">
-              <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1200&q=80" alt="Chargement et manutention">
-              <div class="project-overlay">
-                <div>
-                  <span class="project-badge"><i class="bi bi-box-seam"></i> Chargement</span>
-                  <h3>Chargement & manutention</h3>
-                  <p>
-                    Interventions opérationnelles pour le chargement, le déplacement, la manutention et l’organisation des marchandises.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-6" data-animate>
-            <article class="project-card">
-              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80" alt="Prestations de services entreprise">
-              <div class="project-overlay">
-                <div>
-                  <span class="project-badge"><i class="bi bi-briefcase"></i> Services</span>
-                  <h3>Prestations multiservices</h3>
-                  <p>
-                    Solutions professionnelles adaptées aux besoins des entreprises, institutions et particuliers.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding highlight-section">
-      <div class="container">
-        <div class="row g-4 align-items-stretch">
-          <div class="col-lg-5" data-animate>
-            <div class="capability-box">
-              <h3>Une approche orientée terrain.</h3>
-              <p>
-                Chaque projet est abordé avec une logique de fiabilité, de coordination et de résultat.
-                DJOMBRE SARLU met en avant la clarté, la disponibilité et la capacité d’exécution.
-              </p>
-              <div class="capability-list">
-                <span><i class="bi bi-check-circle-fill text-warning"></i> Analyse du besoin</span>
-                <span><i class="bi bi-check-circle-fill text-warning"></i> Coordination des ressources</span>
-                <span><i class="bi bi-check-circle-fill text-warning"></i> Suivi professionnel</span>
-                <span><i class="bi bi-check-circle-fill text-warning"></i> Respect des engagements</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="row g-4">
-              <div class="col-md-6" data-animate>
-                <div class="process-card">
-                  <div class="process-number">01</div>
-                  <h3>Comprendre le besoin</h3>
-                  <p>Analyse du contexte, du secteur, des contraintes et des objectifs du client.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-animate>
-                <div class="process-card">
-                  <div class="process-number">02</div>
-                  <h3>Proposer une solution</h3>
-                  <p>Préparation d’une réponse claire, adaptée au budget, au délai et au niveau d’intervention attendu.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-animate>
-                <div class="process-card">
-                  <div class="process-number">03</div>
-                  <h3>Organiser l’exécution</h3>
-                  <p>Mobilisation des équipes, prestataires, moyens matériels et ressources nécessaires.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-animate>
-                <div class="process-card">
-                  <div class="process-number">04</div>
-                  <h3>Suivre & finaliser</h3>
-                  <p>Suivi du travail, communication avec le client et livraison selon les engagements définis.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding">
-      <div class="container">
-        <div class="cta-section" data-animate>
-          <span class="section-kicker bg-white text-success"><i class="bi bi-send-check"></i> Nouveau projet</span>
-          <h2>Vous avez un projet BTP, transport, immobilier, minier ou multiservices ?</h2>
-          <p>
-            Présentez votre besoin à DJOMBRE SARLU. L’équipe pourra vous orienter vers une solution adaptée,
-            professionnelle et réaliste selon votre secteur d’activité.
-          </p>
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="devis.html" class="btn-premium bg-white text-success"><i class="bi bi-file-earmark-text"></i> Demander un devis</a>
-            <a href="contact.html" class="btn-outline-premium"><i class="bi bi-telephone"></i> Contacter l’équipe</a>
-            <a href="https://wa.me/224000000000" class="btn-outline-premium"><i class="bi bi-whatsapp"></i> WhatsApp Business</a>
-          </div>
-        </div>
-      </div>
+    <section class="notice" aria-labelledby="notice-title">
+      <div class="badge">Accès temporaire expiré</div>
+      <h1 id="notice-title">Site indisponible</h1>
+      <p>
+        Cette maquette était disponible pendant une période limitée afin de vous permettre
+        d'avoir un aperçu du rendu final. Pour finaliser le travail ou réactiver l'accès,
+        veuillez contacter le développeur.
+      </p>
+      <a class="contact" href="tel:+224628856938">Contacter le développeur : 628 856 938</a>
+      <div class="line" aria-hidden="true"></div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-4">
-          <div class="d-flex align-items-center gap-3 mb-3">
-            <span class="brand-mark">D</span>
-            <div>
-              <div class="brand-title text-white">DJOMBRE SARLU</div>
-              <span class="brand-subtitle">Entreprise multiservices</span>
-            </div>
-          </div>
-          <p>
-            Commerce général, transport, BTP, terrassement minier, agro-business, immobilier,
-            chargement et prestations de services en Guinée.
-          </p>
-        </div>
-
-        <div class="col-6 col-lg-2">
-          <h5>Navigation</h5>
-          <a href="index.html">Accueil</a>
-          <a href="a-propos.html">À propos</a>
-          <a href="services.html">Services</a>
-          <a href="secteurs.html">Secteurs</a>
-          <a href="projets.html">Projets</a>
-        </div>
-
-        <div class="col-6 col-lg-3">
-          <h5>Pages clés</h5>
-          <a href="immobilier.html">Immobilier</a>
-          <a href="agro-business.html">Agro-business</a>
-          <a href="transport.html">Transport</a>
-          <a href="devis.html">Demande de devis</a>
-          <a href="actualites.html">Actualités</a>
-        </div>
-
-        <div class="col-lg-3">
-          <h5>Contact</h5>
-          <a href="tel:+224000000000"><i class="bi bi-telephone me-2"></i>+224 000 00 00 00</a>
-          <a href="mailto:contact@djombre.com"><i class="bi bi-envelope me-2"></i>contact@djombre.com</a>
-          <a href="contact.html"><i class="bi bi-geo-alt me-2"></i>Conakry / Kagbelen, Guinée</a>
-        </div>
-      </div>
-
-      <hr class="border-secondary-subtle my-4">
-
-      <div class="d-flex flex-wrap justify-content-between gap-3 small">
-        <span>© 2026 DJOMBRE SARLU. Tous droits réservés.</span>
-        <span>Maquette front-end statique - Bootstrap 5</span>
-      </div>
-    </div>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/224000000000" aria-label="Contacter DJOMBRE SARLU sur WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    const navbar = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 20);
-    });
-
-    const animatedElements = document.querySelectorAll('[data-animate]');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    animatedElements.forEach((element) => observer.observe(element));
-  </script>
 </body>
 </html>
