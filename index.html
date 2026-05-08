@@ -3,119 +3,1326 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Site indisponible | DJOMBRE SARLU</title>
+  <title>DJOMBRE SARLU | Commerce, BTP, Transport, Mines et Immobilier en Guinée</title>
+  <meta name="description" content="DJOMBRE SARLU est une entreprise multiservices basée en Guinée, spécialisée dans le commerce général, le transport, le BTP, le terrassement minier, l'agro-business, l'immobilier et les prestations de services." />
+  <meta name="keywords" content="entreprise Guinée, BTP Guinée, transport Guinée, agro business Guinée, immobilier Guinée, terrassement minier Guinée, commerce général Guinée, DJOMBRE SARLU" />
+  <meta name="author" content="DJOMBRE SARLU" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="DJOMBRE SARLU | Entreprise multiservices en Guinée" />
+  <meta property="og:description" content="Commerce, transport, BTP, mines, immobilier, agro-business et solutions multiservices en Guinée." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.djombresarlu.com/" />
+  <meta property="og:image" content="assets/images/og-djombre.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Analytics à configurer plus tard -->
+
   <style>
     :root {
-      --green: #0f6b46;
-      --green-dark: #08452f;
-      --gold: #caa24d;
-      --text: #18211d;
-      --muted: #66736d;
-      --border: #e4e9e4;
-      --bg: #f5f7f4;
+      --djombre-green: #0f6b46;
+      --djombre-green-dark: #08452f;
+      --djombre-gold: #caa24d;
+      --djombre-blue: #123b67;
+      --djombre-orange: #d9742c;
+      --djombre-dark: #18211d;
+      --djombre-muted: #66736d;
+      --djombre-soft: #f5f7f4;
+      --djombre-border: #e4e9e4;
       --white: #ffffff;
+      --shadow-sm: 0 12px 34px rgba(13, 31, 24, 0.08);
+      --shadow-md: 0 24px 60px rgba(13, 31, 24, 0.12);
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --transition: all 0.35s ease;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html, body { min-height: 100%; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background:
-        linear-gradient(135deg, rgba(15, 107, 70, 0.10), rgba(202, 162, 77, 0.12)),
-        var(--bg);
-    }
-
-    main {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 28px;
-    }
-
-    .notice {
-      width: min(720px, 100%);
-      padding: clamp(28px, 6vw, 56px);
+      font-family: "Inter", sans-serif;
+      color: var(--djombre-dark);
       background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      box-shadow: 0 24px 70px rgba(24, 33, 29, 0.10);
-      text-align: center;
+      overflow-x: hidden;
     }
 
-    .badge {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .section-padding {
+      padding: 105px 0;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(15, 107, 70, 0.1);
+      color: var(--djombre-green);
+      font-weight: 800;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      margin-bottom: 18px;
+    }
+
+    .section-text {
+      color: var(--djombre-muted);
+      font-size: 1.04rem;
+      line-height: 1.8;
+    }
+
+    .btn-premium {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 34px;
-      padding: 0 14px;
-      margin-bottom: 22px;
-      color: var(--green-dark);
-      background: rgba(15, 107, 70, 0.08);
-      border: 1px solid rgba(15, 107, 70, 0.14);
+      gap: 10px;
       border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
+      padding: 13px 22px;
+      font-weight: 800;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      white-space: nowrap;
     }
 
-    h1 {
-      margin: 0 0 16px;
-      font-size: clamp(2rem, 7vw, 4rem);
+    .btn-green {
+      background: var(--djombre-green);
+      color: var(--white);
+      box-shadow: 0 14px 30px rgba(15, 107, 70, 0.25);
+    }
+
+    .btn-green:hover {
+      background: var(--djombre-green-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-premium {
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--djombre-dark);
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+
+    .btn-outline-premium:hover {
+      background: var(--white);
+      color: var(--djombre-green);
+      transform: translateY(-2px);
+    }
+
+    .topbar {
+      background: #0d2f22;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 0.88rem;
+      padding: 9px 0;
+    }
+
+    .topbar a:hover {
+      color: var(--djombre-gold);
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(228, 233, 228, 0.85);
+      transition: var(--transition);
+      z-index: 1030;
+    }
+
+    .navbar.scrolled {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--djombre-dark);
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-weight: 900;
+      background:
+        linear-gradient(135deg, rgba(202, 162, 77, 0.95), rgba(217, 116, 44, 0.85)),
+        linear-gradient(135deg, var(--djombre-green), var(--djombre-blue));
+      box-shadow: 0 12px 26px rgba(15, 107, 70, 0.22);
+    }
+
+    .brand-subtitle {
+      display: block;
+      font-size: 0.68rem;
+      color: var(--djombre-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: -2px;
+    }
+
+    .nav-link {
+      font-weight: 700;
+      color: #2d3a35;
+      padding: 28px 12px !important;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--djombre-green);
+    }
+
+    .lang-switch {
+      font-weight: 800;
+      color: var(--djombre-blue);
+      border-left: 1px solid var(--djombre-border);
+      padding-left: 14px;
+    }
+
+    .hero {
+      min-height: 760px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(8, 42, 30, 0.92) 0%, rgba(8, 42, 30, 0.74) 46%, rgba(8, 42, 30, 0.24) 100%),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 160px;
+      background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 1));
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 120px 0 90px;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(14px);
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6.6rem);
+      line-height: 0.94;
+      font-weight: 950;
+      letter-spacing: -0.08em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      color: rgba(255, 255, 255, 0.86);
+      line-height: 1.7;
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.11);
+      border: 1px solid rgba(255, 255, 255, 0.17);
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 700;
+      backdrop-filter: blur(14px);
+    }
+
+    .hero-card {
+      position: relative;
+      z-index: 2;
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      background: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-card img {
+      height: 310px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 22px;
+      margin-bottom: 20px;
+    }
+
+    .hero-mini-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .hero-mini-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .hero-mini-item strong {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--white);
       line-height: 1;
     }
 
-    p {
-      margin: 0 auto;
-      max-width: 580px;
-      color: var(--muted);
-      font-size: clamp(1rem, 2.4vw, 1.18rem);
+    .hero-mini-item span {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.88rem;
+    }
+
+    .about-card {
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      border: 1px solid var(--djombre-border);
+    }
+
+    .about-image {
+      min-height: 500px;
+      background:
+        linear-gradient(180deg, rgba(15, 107, 70, 0.08), rgba(15, 107, 70, 0.2)),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85") center/cover no-repeat;
+    }
+
+    .about-content {
+      padding: clamp(34px, 6vw, 62px);
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .feature-list div {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: #41504a;
+      font-weight: 650;
+    }
+
+    .feature-list i {
+      color: var(--djombre-green);
+      font-size: 1.25rem;
+      margin-top: 1px;
+    }
+
+    .services-section {
+      background: var(--djombre-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-section::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      top: -220px;
+      right: -180px;
+      border-radius: 999px;
+      background: rgba(202, 162, 77, 0.13);
+    }
+
+    .service-card {
+      height: 100%;
+      padding: 30px;
+      border-radius: var(--radius-md);
+      background: var(--white);
+      border: 1px solid rgba(228, 233, 228, 0.85);
+      box-shadow: 0 10px 28px rgba(13, 31, 24, 0.06);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--djombre-green), var(--djombre-gold), var(--djombre-orange));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: rgba(15, 107, 70, 0.1);
+      color: var(--djombre-green);
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-size: 1.14rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: -0.03em;
+    }
+
+    .service-card p {
+      color: var(--djombre-muted);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--djombre-green);
+      font-weight: 850;
+    }
+
+    .why-card {
+      padding: 28px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--djombre-border);
+      height: 100%;
+      transition: var(--transition);
+      background: var(--white);
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .why-card i {
+      color: var(--djombre-gold);
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .why-card h3 {
+      font-size: 1.08rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      margin: 0;
+      color: var(--djombre-muted);
+      line-height: 1.65;
+    }
+
+    .stats-band {
+      background:
+        linear-gradient(135deg, rgba(8, 69, 47, 0.96), rgba(18, 59, 103, 0.94)),
+        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 58px 36px;
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: clamp(2.2rem, 4vw, 4rem);
+      font-weight: 950;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      color: rgba(255, 255, 255, 0.74);
+      font-weight: 700;
+    }
+
+    .projects-section {
+      background: #fbfcfa;
+    }
+
+    .project-card {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      min-height: 330px;
+      box-shadow: var(--shadow-sm);
+      isolation: isolate;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 330px;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px;
+      background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.82));
+      color: var(--white);
+      z-index: 2;
+    }
+
+    .project-tag {
+      display: inline-flex;
+      width: fit-content;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: rgba(202, 162, 77, 0.95);
+      color: #1e1707;
+      font-weight: 900;
+      font-size: 0.76rem;
+      margin-bottom: 10px;
+    }
+
+    .project-overlay h3 {
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    .project-overlay p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .quote-section {
+      background: var(--djombre-soft);
+    }
+
+    .quote-box {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--djombre-border);
+    }
+
+    .quote-info {
+      height: 100%;
+      padding: clamp(34px, 6vw, 60px);
+      background:
+        linear-gradient(135deg, rgba(8, 69, 47, 0.96), rgba(18, 59, 103, 0.92)),
+        url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=85") center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .quote-info p {
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.75;
+    }
+
+    .quote-form {
+      padding: clamp(34px, 6vw, 60px);
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 15px;
+      border: 1px solid var(--djombre-border);
+      padding: 14px 16px;
+      min-height: 52px;
+      box-shadow: none !important;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: var(--djombre-green);
+    }
+
+    .contact-card {
+      padding: 30px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--djombre-border);
+      height: 100%;
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(13, 31, 24, 0.05);
+    }
+
+    .contact-card i {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: rgba(15, 107, 70, 0.1);
+      color: var(--djombre-green);
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.08rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: var(--djombre-muted);
+      margin: 0;
       line-height: 1.7;
     }
 
-    .contact {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 52px;
-      margin-top: 30px;
-      padding: 0 22px;
-      color: var(--white);
-      background: var(--green);
-      border-radius: 999px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 16px 34px rgba(15, 107, 70, 0.22);
+    .footer {
+      background: #0b2118;
+      color: rgba(255, 255, 255, 0.78);
+      padding: 70px 0 26px;
     }
 
-    .contact:hover { background: var(--green-dark); }
+    .footer h4 {
+      color: var(--white);
+      font-weight: 900;
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
 
-    .line {
-      width: 84px;
-      height: 4px;
-      margin: 26px auto 0;
-      background: var(--gold);
-      border-radius: 999px;
+    .footer a {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 10px;
+      transition: var(--transition);
+    }
+
+    .footer a:hover {
+      color: var(--djombre-gold);
+      transform: translateX(3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+      margin-top: 44px;
+      font-size: 0.9rem;
+    }
+
+    .floating-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1040;
+      display: grid;
+      gap: 12px;
+    }
+
+    .floating-btn {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: 1.45rem;
+      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+      transition: var(--transition);
+    }
+
+    .floating-btn:hover {
+      color: var(--white);
+      transform: translateY(-4px) scale(1.03);
+    }
+
+    .floating-whatsapp {
+      background: #25d366;
+    }
+
+    .floating-call {
+      background: var(--djombre-blue);
+    }
+
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    [data-animate].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 991.98px) {
+      .topbar {
+        display: none;
+      }
+
+      .nav-link {
+        padding: 12px 0 !important;
+      }
+
+      .lang-switch {
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 86px 0 70px;
+      }
+
+      .hero-card {
+        margin-top: 28px;
+      }
+
+      .section-padding {
+        padding: 76px 0;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .hero-actions .btn-premium {
+        width: 100%;
+      }
+
+      .hero-mini-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-band {
+        padding: 42px 20px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <div class="d-flex flex-wrap align-items-center gap-4">
+        <a href="tel:+224000000000"><i class="bi bi-telephone me-1"></i> +224 000 00 00 00</a>
+        <a href="mailto:contact@djombresarlu.com"><i class="bi bi-envelope me-1"></i> contact@djombresarlu.com</a>
+        <span><i class="bi bi-geo-alt me-1"></i> Conakry / Kagbelen, Guinée</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="DJOMBRE SARLU - Accueil">
+        <span class="brand-mark">D</span>
+        <span>
+          DJOMBRE SARLU
+          <span class="brand-subtitle">Solutions multiservices</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link lang-switch" href="en/index.html">FR / EN</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn-premium btn-green" href="devis.html"><i class="bi bi-send"></i> Demander un devis</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7" data-animate>
+          <div class="hero-kicker"><i class="bi bi-building-check"></i> Entreprise multiservices en Guinée</div>
+          <h1>DJOMBRE SARLU</h1>
+          <p>Commerce, transport, BTP, mines, immobilier et solutions multiservices en Guinée.</p>
+          <div class="hero-actions">
+            <a class="btn-premium btn-green" href="services.html"><i class="bi bi-grid-1x2"></i> Nos services</a>
+            <a class="btn-premium btn-outline-premium" href="devis.html"><i class="bi bi-file-earmark-text"></i> Demander un devis</a>
+            <a class="btn-premium btn-outline-premium" href="https://wa.me/224000000000" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp Business</a>
+          </div>
+          <div class="hero-badges">
+            <span class="hero-badge"><i class="bi bi-shield-check"></i> Fiabilité</span>
+            <span class="hero-badge"><i class="bi bi-lightning-charge"></i> Réactivité</span>
+            <span class="hero-badge"><i class="bi bi-diagram-3"></i> Multi-secteurs</span>
+            <span class="hero-badge"><i class="bi bi-compass"></i> Expertise terrain</span>
+          </div>
+        </div>
+        <div class="col-lg-5" data-animate>
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=85" alt="Opérations professionnelles BTP et transport" />
+            <div class="hero-mini-grid">
+              <div class="hero-mini-item">
+                <strong>8+</strong>
+                <span>Domaines couverts</span>
+              </div>
+              <div class="hero-mini-item">
+                <strong>24/7</strong>
+                <span>Disponibilité terrain</span>
+              </div>
+              <div class="hero-mini-item">
+                <strong>GN</strong>
+                <span>Présence en Guinée</span>
+              </div>
+              <div class="hero-mini-item">
+                <strong>B2B</strong>
+                <span>Solutions partenaires</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <main>
-    <section class="notice" aria-labelledby="notice-title">
-      <div class="badge">Accès temporaire expiré</div>
-      <h1 id="notice-title">Site indisponible</h1>
-      <p>
-        Cette maquette était disponible pendant une période limitée afin de vous permettre
-        d'avoir un aperçu du rendu final. Pour finaliser le travail ou réactiver l'accès,
-        veuillez contacter le développeur.
-      </p>
-      <a class="contact" href="tel:+224628856938">Contacter le développeur : 628 856 938</a>
-      <div class="line" aria-hidden="true"></div>
+    <section class="section-padding" id="a-propos">
+      <div class="container">
+        <div class="about-card" data-animate>
+          <div class="row g-0 align-items-stretch">
+            <div class="col-lg-5 about-image" role="img" aria-label="Bâtiment professionnel moderne"></div>
+            <div class="col-lg-7">
+              <div class="about-content">
+                <span class="section-kicker"><i class="bi bi-info-circle"></i> À propos</span>
+                <h2 class="section-title">Une entreprise solide pour accompagner vos besoins stratégiques.</h2>
+                <p class="section-text">DJOMBRE SARLU accompagne particuliers, entreprises et institutions avec des solutions professionnelles dans plusieurs secteurs stratégiques : commerce général, transport, BTP, mines, agro-business, immobilier, chargement et prestations de services.</p>
+                <p class="section-text">Notre ambition est de bâtir des relations durables avec nos partenaires grâce à une organisation sérieuse, une présence terrain efficace et une vision orientée résultats.</p>
+                <div class="feature-list">
+                  <div><i class="bi bi-check2-circle"></i><span>Approche multiservices adaptée aux marchés publics, privés et institutionnels.</span></div>
+                  <div><i class="bi bi-check2-circle"></i><span>Capacité à coordonner des opérations dans plusieurs secteurs complémentaires.</span></div>
+                  <div><i class="bi bi-check2-circle"></i><span>Image professionnelle, fiable et tournée vers la croissance.</span></div>
+                </div>
+                <div class="mt-4">
+                  <a class="btn-premium btn-green" href="a-propos.html"><i class="bi bi-arrow-right-circle"></i> Découvrir l’entreprise</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding services-section" id="services">
+      <div class="container position-relative">
+        <div class="row justify-content-between align-items-end mb-5" data-animate>
+          <div class="col-lg-7">
+            <span class="section-kicker"><i class="bi bi-layers"></i> Nos services</span>
+            <h2 class="section-title">Des solutions complètes pour plusieurs secteurs d’activité.</h2>
+          </div>
+          <div class="col-lg-4">
+            <p class="section-text mb-0">DJOMBRE SARLU intervient sur des besoins opérationnels variés avec une logique de qualité, de rapidité et de professionnalisme.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-bag-check"></i></div>
+              <h3>Commerce général</h3>
+              <p>Approvisionnement, distribution, représentation et solutions commerciales adaptées aux besoins locaux.</p>
+              <a class="service-link" href="services.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-truck"></i></div>
+              <h3>Transport & logistique</h3>
+              <p>Solutions de transport, déplacement de biens, coordination logistique et appui opérationnel.</p>
+              <a class="service-link" href="transport.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-cone-striped"></i></div>
+              <h3>Construction / BTP</h3>
+              <p>Appui aux travaux de bâtiment, infrastructures, chantiers et projets de construction modernes.</p>
+              <a class="service-link" href="services.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-minecart-loaded"></i></div>
+              <h3>Terrassement minier</h3>
+              <p>Travaux de terrain, préparation de zones, opérations de terrassement et accompagnement minier.</p>
+              <a class="service-link" href="secteurs.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-tree"></i></div>
+              <h3>Agro-business</h3>
+              <p>Valorisation des opportunités agricoles, production, distribution et projets agro-économiques.</p>
+              <a class="service-link" href="agro-business.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-buildings"></i></div>
+              <h3>Immobilier</h3>
+              <p>Promotion immobilière, gestion immobilière, accompagnement de projets et valorisation foncière.</p>
+              <a class="service-link" href="immobilier.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-box-seam"></i></div>
+              <h3>Chargement & manutention</h3>
+              <p>Organisation des opérations de chargement, manutention, assistance terrain et coordination.</p>
+              <a class="service-link" href="services.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-briefcase"></i></div>
+              <h3>Prestations diverses</h3>
+              <p>Solutions professionnelles sur mesure pour entreprises, institutions, partenaires et particuliers.</p>
+              <a class="service-link" href="services.html">Voir plus <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 780px;" data-animate>
+          <span class="section-kicker"><i class="bi bi-stars"></i> Pourquoi nous choisir</span>
+          <h2 class="section-title">Un partenaire fiable pour vos opérations en Guinée.</h2>
+          <p class="section-text">Nous mettons l’accent sur la rigueur, la disponibilité, la coordination et le respect des engagements.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg" data-animate>
+            <div class="why-card">
+              <i class="bi bi-people"></i>
+              <h3>Équipe sérieuse</h3>
+              <p>Une approche professionnelle avec un sens élevé de la responsabilité.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg" data-animate>
+            <div class="why-card">
+              <i class="bi bi-lightning"></i>
+              <h3>Solutions rapides</h3>
+              <p>Une capacité de réaction adaptée aux réalités du terrain et aux urgences.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg" data-animate>
+            <div class="why-card">
+              <i class="bi bi-geo"></i>
+              <h3>Expertise locale</h3>
+              <p>Une bonne compréhension du marché guinéen, de ses besoins et contraintes.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg" data-animate>
+            <div class="why-card">
+              <i class="bi bi-kanban"></i>
+              <h3>Gestion professionnelle</h3>
+              <p>Une organisation claire pour mieux suivre les opérations et les engagements.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg" data-animate>
+            <div class="why-card">
+              <i class="bi bi-clock-history"></i>
+              <h3>Respect des délais</h3>
+              <p>Une priorité donnée à la ponctualité et à la satisfaction des partenaires.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <div class="container">
+        <div class="stats-band" data-animate>
+          <div class="row g-4">
+            <div class="col-6 col-lg-3 stat-item">
+              <div class="stat-number" data-counter="25">0</div>
+              <div class="stat-label">Projets accompagnés</div>
+            </div>
+            <div class="col-6 col-lg-3 stat-item">
+              <div class="stat-number" data-counter="40">0</div>
+              <div class="stat-label">Clients et partenaires</div>
+            </div>
+            <div class="col-6 col-lg-3 stat-item">
+              <div class="stat-number" data-counter="8">0</div>
+              <div class="stat-label">Secteurs couverts</div>
+            </div>
+            <div class="col-6 col-lg-3 stat-item">
+              <div class="stat-number" data-counter="24">0</div>
+              <div class="stat-label">Disponibilité terrain</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding projects-section" id="projets">
+      <div class="container">
+        <div class="row justify-content-between align-items-end mb-5" data-animate>
+          <div class="col-lg-7">
+            <span class="section-kicker"><i class="bi bi-image"></i> Projets / Réalisations</span>
+            <h2 class="section-title">Une présence adaptée aux grands secteurs économiques.</h2>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="btn-premium btn-green" href="projets.html"><i class="bi bi-folder2-open"></i> Voir les projets</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-animate>
+            <article class="project-card">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=85" alt="Chantier BTP" />
+              <div class="project-overlay">
+                <span class="project-tag">BTP</span>
+                <h3>Chantiers et infrastructures</h3>
+                <p>Appui aux travaux de construction, rénovation et projets techniques.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate>
+            <article class="project-card">
+              <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=85" alt="Camion de transport" />
+              <div class="project-overlay">
+                <span class="project-tag">Transport</span>
+                <h3>Transport et logistique</h3>
+                <p>Coordination des mouvements de marchandises et opérations terrain.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-animate>
+            <article class="project-card">
+              <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=900&q=85" alt="Zone minière" />
+              <div class="project-overlay">
+                <span class="project-tag">Mines</span>
+                <h3>Terrassement minier</h3>
+                <p>Préparation de terrains, travaux lourds et accompagnement d’exploitation.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-6" data-animate>
+            <article class="project-card">
+              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1100&q=85" alt="Bâtiment moderne" />
+              <div class="project-overlay">
+                <span class="project-tag">Immobilier</span>
+                <h3>Promotion et gestion immobilière</h3>
+                <p>Valorisation de projets immobiliers, gestion et accompagnement professionnel.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-6" data-animate>
+            <article class="project-card">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1100&q=85" alt="Terrain agricole" />
+              <div class="project-overlay">
+                <span class="project-tag">Agro-business</span>
+                <h3>Projets agro-économiques</h3>
+                <p>Développement d’opportunités agricoles, commerciales et productives.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding quote-section" id="devis">
+      <div class="container">
+        <div class="quote-box" data-animate>
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="quote-info">
+                <span class="section-kicker" style="background: rgba(255,255,255,0.12); color: #fff;"><i class="bi bi-send"></i> Demande de devis</span>
+                <h2 class="section-title">Parlez-nous de votre besoin.</h2>
+                <p>Notre équipe vous répondra avec une orientation claire selon le secteur concerné : BTP, transport, mines, immobilier, commerce, agro-business ou prestations diverses.</p>
+                <div class="feature-list mt-4">
+                  <div><i class="bi bi-check2-circle" style="color: var(--djombre-gold);"></i><span>Réponse rapide</span></div>
+                  <div><i class="bi bi-check2-circle" style="color: var(--djombre-gold);"></i><span>Orientation professionnelle</span></div>
+                  <div><i class="bi bi-check2-circle" style="color: var(--djombre-gold);"></i><span>Accompagnement personnalisé</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form class="quote-form" action="devis.html" method="get">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold" for="name">Nom complet</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Votre nom" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold" for="company">Société</label>
+                    <input class="form-control" type="text" id="company" name="company" placeholder="Nom de la société" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold" for="phone">Téléphone</label>
+                    <input class="form-control" type="tel" id="phone" name="phone" placeholder="Votre numéro" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold" for="need">Besoin</label>
+                    <select class="form-select" id="need" name="need" required>
+                      <option value="">Choisir un service</option>
+                      <option>Commerce général</option>
+                      <option>Transport & logistique</option>
+                      <option>BTP / Construction</option>
+                      <option>Terrassement minier</option>
+                      <option>Agro-business</option>
+                      <option>Immobilier</option>
+                      <option>Chargement & manutention</option>
+                      <option>Prestations diverses</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-bold" for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Décrivez brièvement votre demande"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn-premium btn-green border-0" type="submit"><i class="bi bi-send-check"></i> Envoyer la demande</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 760px;" data-animate>
+          <span class="section-kicker"><i class="bi bi-headset"></i> Contact rapide</span>
+          <h2 class="section-title">Contactez DJOMBRE SARLU dès maintenant.</h2>
+          <p class="section-text">Besoin d’un devis, d’un rendez-vous ou d’un partenariat ? Notre équipe est disponible pour vous orienter.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-animate>
+            <div class="contact-card">
+              <i class="bi bi-telephone"></i>
+              <h3>Téléphone</h3>
+              <a href="tel:+224000000000">+224 000 00 00 00</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <div class="contact-card">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <a href="mailto:contact@djombresarlu.com">contact@djombresarlu.com</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <div class="contact-card">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Adresse</h3>
+              <p>Conakry / Kagbelen, Guinée</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-animate>
+            <div class="contact-card">
+              <i class="bi bi-whatsapp"></i>
+              <h3>WhatsApp</h3>
+              <a href="https://wa.me/224000000000" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand text-white mb-3" href="index.html">
+            <span class="brand-mark">D</span>
+            <span>
+              DJOMBRE SARLU
+              <span class="brand-subtitle" style="color: rgba(255,255,255,0.58);">Solutions multiservices</span>
+            </span>
+          </a>
+          <p style="line-height: 1.8;">Entreprise multiservices basée en Guinée, engagée dans le commerce général, le transport, le BTP, les mines, l’agro-business, l’immobilier et les prestations professionnelles.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="services.html">Services</a>
+          <a href="projets.html">Projets</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>Secteurs</h4>
+          <a href="transport.html">Transport</a>
+          <a href="immobilier.html">Immobilier</a>
+          <a href="agro-business.html">Agro-business</a>
+          <a href="secteurs.html">Mines & BTP</a>
+          <a href="services.html">Prestations de services</a>
+        </div>
+        <div class="col-lg-3">
+          <h4>Contact</h4>
+          <a href="tel:+224000000000"><i class="bi bi-telephone me-2"></i> +224 000 00 00 00</a>
+          <a href="mailto:contact@djombresarlu.com"><i class="bi bi-envelope me-2"></i> contact@djombresarlu.com</a>
+          <a href="https://wa.me/224000000000" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i> WhatsApp Business</a>
+          <a href="devis.html"><i class="bi bi-file-earmark-text me-2"></i> Demander un devis</a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-3">
+        <span>© 2026 DJOMBRE SARLU. Tous droits réservés.</span>
+        <span>Site vitrine corporate — Maquette front-end statique.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-actions" aria-label="Actions rapides">
+    <a class="floating-btn floating-whatsapp" href="https://wa.me/224000000000" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a class="floating-btn floating-call" href="tel:+224000000000" aria-label="Appeler"><i class="bi bi-telephone-fill"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const animatedItems = document.querySelectorAll('[data-animate]');
+    const counters = document.querySelectorAll('[data-counter]');
+    let countersStarted = false;
+
+    const animateCounter = (counter) => {
+      const target = Number(counter.dataset.counter);
+      const duration = 1500;
+      const startTime = performance.now();
+
+      const update = (currentTime) => {
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        const value = Math.floor(progress * target);
+        counter.textContent = target === 24 ? `${value}/7` : `${value}+`;
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.textContent = target === 24 ? '24/7' : `${target}+`;
+        }
+      };
+
+      requestAnimationFrame(update);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.16 });
+
+    animatedItems.forEach((item) => observer.observe(item));
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !countersStarted) {
+          countersStarted = true;
+          counters.forEach(animateCounter);
+        }
+      });
+    }, { threshold: 0.35 });
+
+    const statsBand = document.querySelector('.stats-band');
+    if (statsBand) {
+      counterObserver.observe(statsBand);
+    }
+  </script>
 </body>
 </html>
